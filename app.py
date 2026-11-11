@@ -14,7 +14,7 @@ import streamlit as st
 # 1. 页面设置（浏览器标签标题、布局宽度）
 # ---------------------------------------------------------------
 st.set_page_config(
-    page_title="姜宇成 | Portfolio",
+    page_title="Jiang Yucheng (ZeroJust) | Portfolio",
     page_icon="👋",
     layout="centered",
 )
@@ -23,7 +23,9 @@ st.set_page_config(
 # 2. 个人资料：集中放在最上面，改资料只改这里
 # ---------------------------------------------------------------
 PROFILE = {
-    "name": "姜宇成",
+    "name": "Jiang Yucheng",
+    "name_zh": "姜宇成",
+    "nickname": "ZeroJust",
     "role": "First-year Artificial Intelligence major",
     "email": "126090293@link.cuhk.edu.cn",
     "about": (
@@ -34,30 +36,26 @@ PROFILE = {
     ),
 }
 
-# 技能：名字 → 熟练度（0-100）
+# 技能：名字 → 一句说明
 SKILLS = {
-    "Python": 75,
-    "HTML": 65,
-    "CSS": 60,
-    "JavaScript": 50,
-    "Streamlit": 70,
-    "Git & GitHub": 55,
+    "Python": "Scripts, data handling and small command-line tools.",
+    "C++": "Algorithms, data structures and compiled programs.",
+    "AI Programming Design": "Designing and building AI-powered applications.",
 }
 
 # 项目：标题 → (技术, 一句话说明)
 PROJECTS = {
-    "Personal Website": ("HTML · CSS · JavaScript", "The native version of this page."),
+    "Personal Website": ("HTML · CSS · JavaScript · Streamlit", "This page, built twice: native web and Streamlit."),
     "Virtual Dog Park": ("HTML · CSS · JavaScript", "Adopt, feed and grow a virtual dog."),
-    "Number Guessing Game": ("Python", "A terminal game with loops and validation."),
 }
 
-INTERESTS = ["🏀 Basketball", "📷 Photography", "🤖 AI tools", "🎮 Indie games", "🍜 Street food"]
+INTERESTS = ["💻 Programming", "🧱 Minecraft", "🏀 Basketball", "🎹 Piano"]
 
 # ---------------------------------------------------------------
 # 3. 头部：标题 + 简介 + 联系方式
 # ---------------------------------------------------------------
 st.title(f"👋 Hi, I'm {PROFILE['name']}")
-st.caption(PROFILE["role"])
+st.caption(f"{PROFILE['role']} · {PROFILE['name_zh']} · online as {PROFILE['nickname']}")
 st.write(PROFILE["about"])
 
 left, right = st.columns([1, 1])
@@ -69,15 +67,11 @@ with right:
 st.divider()
 
 # ---------------------------------------------------------------
-# 4. 技能：进度条由 st.progress 生成
+# 4. 技能：名称 + 一句说明
 # ---------------------------------------------------------------
 st.header("Skills")
-for name, level in SKILLS.items():
-    # 左侧写技能名，右侧显示百分比，下面跟一条进度条
-    col_name, col_percent = st.columns([3, 1])
-    col_name.write(f"**{name}**")
-    col_percent.write(f"{level}%")
-    st.progress(level / 100)
+for name, description in SKILLS.items():
+    st.markdown(f"**{name}** — {description}")
 
 st.divider()
 

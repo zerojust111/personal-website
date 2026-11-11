@@ -38,7 +38,7 @@ py -m http.server 8000
 
 | Responsibility | File | Concrete example |
 | --- | --- | --- |
-| Structure | `index.html` | `<section id="skills">` with six `<li class="card">` |
+| Structure | `index.html` | `<section id="skills">` with three `<li class="card">` |
 | Appearance | `style.css` | `:root { --primary: #3563e9; }` — one variable drives every blue element |
 | Behaviour | `script.js` | `themeButton.addEventListener("click", ...)` |
 
@@ -67,7 +67,7 @@ The browser does **not** run Python — it only displays what the Python server 
 | Responsibility | How it is done | Concrete example |
 | --- | --- | --- |
 | Structure | Python function calls | `st.header("Skills")` |
-| Appearance | Almost none — Streamlit's built-in style | `st.progress(level / 100)` gives a styled bar |
+| Appearance | Almost none — Streamlit's built-in style | `st.caption(...)` and `st.divider()` get Streamlit's default look |
 | Behaviour | Widgets + Python logic | `st.selectbox(...)` returns the chosen value; an `if` handles it |
 
 ### The interactive widgets
@@ -89,13 +89,13 @@ Everything below is placeholder content — change it before submitting.
 
 | What | Where |
 | --- | --- |
-| Browser tab title | `<title>姜宇成 | Personal Website</title>` |
-| Logo letters | `<a class="logo" href="#top">JYC</a>` |
-| Name, tagline | `.hero-name`, `.hero-text` |
+| Browser tab title | `<title>Jiang Yucheng (ZeroJust) | Personal Website</title>` |
+| Logo letters | `<a class="logo" href="#top">ZJ</a>` |
+| Name, nickname, tagline | `.hero-name`, `.hero-alias`, `.hero-text` |
 | Email link | `href="mailto:126090293@link.cuhk.edu.cn"` |
 | About text | `<section id="about">` |
-| Skills + levels | the six `<li class="card">` items; each `style="width: 75%"` is the bar |
-| Projects | `<section id="projects">` — three `<article class="card">` |
+| Skills | the three `<li class="card">` items (name + one-line description) |
+| Projects | `<section id="projects">` — two `<article class="card">` |
 | Interests | `<section id="interests">` — the `<li>` list |
 | Footer name | `.site-footer` |
 
@@ -103,8 +103,8 @@ Everything below is placeholder content — change it before submitting.
 
 | What | Where |
 | --- | --- |
-| Name, role, email, about | the `PROFILE` dict at the top |
-| Skills + levels | the `SKILLS` dict |
+| Name, Chinese name, nickname, role, email, about | the `PROFILE` dict at the top |
+| Skills | the `SKILLS` dict (name → description) |
 | Projects | the `PROJECTS` dict |
 | Interests | the `INTERESTS` list |
 | Fun facts (Version A) | the `FACTS` list in `script.js` |
