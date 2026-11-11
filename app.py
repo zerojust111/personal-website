@@ -64,7 +64,7 @@ left, right = st.columns([1, 1])
 with left:
     st.link_button("✉️ Email me", f"mailto:{PROFILE['email']}", use_container_width=True)
 with right:
-    st.link_button("📂 My GitHub", "https://github.com/YOUR-USERNAME", use_container_width=True)
+    st.link_button("📂 My GitHub", "https://github.com/zerojust111", use_container_width=True)
 
 st.divider()
 
