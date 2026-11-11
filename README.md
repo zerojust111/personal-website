@@ -81,6 +81,36 @@ The browser does **not** run Python — it only displays what the Python server 
 
 ---
 
+## Where to put your own information
+
+Everything below is placeholder content — change it before submitting.
+
+**Version A (`index.html`)**
+
+| What | Where |
+| --- | --- |
+| Browser tab title | `<title>Tom Zhang | Personal Website</title>` |
+| Logo letters | `<a class="logo" href="#top">TZ</a>` |
+| Name, tagline | `.hero-name`, `.hero-text` |
+| Email link | `href="mailto:tom.zhang@example.com"` |
+| About text | `<section id="about">` |
+| Skills + levels | the six `<li class="card">` items; each `style="width: 75%"` is the bar |
+| Projects | `<section id="projects">` — three `<article class="card">` |
+| Interests | `<section id="interests">` — the `<li>` list |
+| Footer name | `.site-footer` |
+
+**Version B (`app.py`)**
+
+| What | Where |
+| --- | --- |
+| Name, role, email, about | the `PROFILE` dict at the top |
+| Skills + levels | the `SKILLS` dict |
+| Projects | the `PROJECTS` dict |
+| Interests | the `INTERESTS` list |
+| Fun facts (Version A) | the `FACTS` list in `script.js` |
+
+---
+
 ## Comparison
 
 See [`COMPARISON.md`](COMPARISON.md) for the six-question table from the lecture.
