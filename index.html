@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--
+  index.html = STRUCTURE (结构)
+  这个文件只负责“页面上有什么”：标题、段落、图片、按钮、区块顺序。
+  外观交给 style.css，互动交给 script.js。
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tom Zhang | Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== 顶部导航 ===== -->
+  <header class="site-header">
+    <a class="logo" href="#top">TZ</a>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#interests">Interests</a>
+    </nav>
+
+    <!-- 互动按钮 1：切换深色 / 浅色主题 -->
+    <button id="theme-toggle" class="btn btn-ghost" type="button">🌙 Dark mode</button>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero：第一屏 ===== -->
+    <section class="hero">
+      <p class="hero-kicker">Hello, I am</p>
+      <h1 class="hero-name">Tom Zhang</h1>
+      <p class="hero-text">
+        A first-year <strong>AIE1101</strong> student learning how software is built —
+        from Python scripts to websites that run in a browser.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">See my projects</a>
+        <a class="btn btn-ghost" href="mailto:tom.zhang@example.com">Contact me</a>
+      </div>
+    </section>
+
+    <!-- ===== About Me ===== -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I am studying Artificial Intelligence Engineering. I started with terminal programs
+        in Python and now I am learning how the same ideas become an interactive web
+        application: HTML for structure, CSS for appearance, JavaScript for behaviour.
+      </p>
+      <p>
+        I like small projects that I can finish, test and explain. This page is one of them:
+        it was written by hand, file by file, so I can describe every line.
+      </p>
+
+      <!-- 互动按钮 2：随机显示一条小知识 -->
+      <button id="fun-fact-btn" class="btn btn-primary" type="button">Show a fun fact</button>
+      <p id="fun-fact" class="fun-fact" aria-live="polite"></p>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="cards">
+        <li class="card">
+          <span class="card-icon">🐍</span>
+          <h3>Python</h3>
+          <p>Variables, conditions, loops, functions, files.</p>
+          <div class="bar"><span style="width: 75%"></span></div>
+        </li>
+        <li class="card">
+          <span class="card-icon">🧱</span>
+          <h3>HTML</h3>
+          <p>Page structure: headings, sections, forms, buttons.</p>
+          <div class="bar"><span style="width: 65%"></span></div>
+        </li>
+        <li class="card">
+          <span class="card-icon">🎨</span>
+          <h3>CSS</h3>
+          <p>Colour, fonts, spacing, layout, responsive design.</p>
+          <div class="bar"><span style="width: 60%"></span></div>
+        </li>
+        <li class="card">
+          <span class="card-icon">⚡</span>
+          <h3>JavaScript</h3>
+          <p>DOM, events, functions, localStorage.</p>
+          <div class="bar"><span style="width: 50%"></span></div>
+        </li>
+        <li class="card">
+          <span class="card-icon">🎈</span>
+          <h3>Streamlit</h3>
+          <p>Turning Python into an interactive web app.</p>
+          <div class="bar"><span style="width: 70%"></span></div>
+        </li>
+        <li class="card">
+          <span class="card-icon">🌿</span>
+          <h3>Git &amp; GitHub</h3>
+          <p>Commits, branches, remotes, pushing to GitHub.</p>
+          <div class="bar"><span style="width: 55%"></span></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="cards cards-wide">
+        <article class="card">
+          <h3>Personal Website</h3>
+          <p class="tag">HTML · CSS · JavaScript</p>
+          <p>The page you are reading now, built twice: native web and Streamlit.</p>
+        </article>
+        <article class="card">
+          <h3>Virtual Dog Park</h3>
+          <p class="tag">HTML · CSS · JavaScript</p>
+          <p>Adopt a virtual dog, feed it, play with it, and watch it grow.</p>
+        </article>
+        <article class="card">
+          <h3>Number Guessing Game</h3>
+          <p class="tag">Python</p>
+          <p>A terminal game with loops, random numbers and input validation.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Interests ===== -->
+    <section id="interests" class="section">
+      <h2>Interests</h2>
+      <ul class="tags">
+        <li>Basketball</li>
+        <li>Photography</li>
+        <li>AI tools</li>
+        <li>Indie games</li>
+        <li>Street food</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Tom Zhang · Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
