@@ -14,7 +14,7 @@ import streamlit as st
 # 1. 页面设置（浏览器标签标题、布局宽度）
 # ---------------------------------------------------------------
 st.set_page_config(
-    page_title="Tom Zhang | Portfolio",
+    page_title="姜宇成 | Portfolio",
     page_icon="👋",
     layout="centered",
 )
@@ -23,14 +23,14 @@ st.set_page_config(
 # 2. 个人资料：集中放在最上面，改资料只改这里
 # ---------------------------------------------------------------
 PROFILE = {
-    "name": "Tom Zhang",
-    "role": "First-year AIE1101 student",
-    "email": "tom.zhang@example.com",
+    "name": "姜宇成",
+    "role": "First-year Artificial Intelligence major",
+    "email": "126090293@link.cuhk.edu.cn",
     "about": (
-        "I am studying Artificial Intelligence Engineering. I started with terminal "
-        "programs in Python and now I am learning how the same ideas become an "
-        "interactive web application. This page is the Streamlit version of my "
-        "personal website — the same content as the HTML/CSS/JavaScript build."
+        "I am a first-year Artificial Intelligence major. My AIE1101 course started with "
+        "terminal programs in Python, and now I am learning how the same ideas become an "
+        "interactive web application. This page is the Streamlit version of my personal "
+        "website — the same content as the HTML/CSS/JavaScript build."
     ),
 }
 

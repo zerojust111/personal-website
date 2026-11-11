@@ -89,10 +89,10 @@ Everything below is placeholder content — change it before submitting.
 
 | What | Where |
 | --- | --- |
-| Browser tab title | `<title>Tom Zhang | Personal Website</title>` |
-| Logo letters | `<a class="logo" href="#top">TZ</a>` |
+| Browser tab title | `<title>姜宇成 | Personal Website</title>` |
+| Logo letters | `<a class="logo" href="#top">JYC</a>` |
 | Name, tagline | `.hero-name`, `.hero-text` |
-| Email link | `href="mailto:tom.zhang@example.com"` |
+| Email link | `href="mailto:126090293@link.cuhk.edu.cn"` |
 | About text | `<section id="about">` |
 | Skills + levels | the six `<li class="card">` items; each `style="width: 75%"` is the bar |
 | Projects | `<section id="projects">` — three `<article class="card">` |
