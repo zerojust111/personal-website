@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flappy Bird</title><style>
+/* 页面只保留画布，选择都在框内 / Only the canvas on the page, all selectors live in-canvas */
+body{margin:0;background:#4ec0ca;display:grid;place-items:center;min-height:100vh;padding:10px;box-sizing:border-box}
+canvas{image-rendering:pixelated;width:432px;max-width:95vw;height:auto;border:4px solid #543847;box-shadow:0 10px 35px #00000033;touch-action:manipulation;outline:none}
+</style></head><body><canvas id="game" width="288" height="512" tabindex="0" aria-label="Flappy Bird game. Press Space or tap to fly."></canvas>
+<div style="position:fixed;bottom:8px;left:0;right:0;text-align:center;font:12px/1.4 sans-serif;color:#ffffffb0;text-shadow:0 1px 2px #00000040;pointer-events:none">Art assets: <b>flappy-bird-assets</b> by samuelcust (<a href="https://github.com/samuelcust/flappy-bird-assets" style="color:inherit">github.com/samuelcust</a>) · MIT License</div>
+<script src="game.js"></script></body></html>

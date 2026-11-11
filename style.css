@@ -189,6 +189,7 @@ a:hover { text-decoration: underline; }
 .card h3 { font-size: 18px; margin-bottom: 6px; }
 .card p { margin: 0 0 12px; font-size: 15px; }
 .card-icon { font-size: 24px; display: block; margin-bottom: 8px; }
+.card .btn { margin-top: 4px; font-size: 14px; padding: 8px 16px; }
 
 /* ---------- 9. 兴趣标签 ---------- */
 .tags {

@@ -114,6 +114,17 @@ Everything below is placeholder content — change it before submitting.
 
 ---
 
+## The playable project
+
+`games/flappy-bird/` is my AIE1101 midterm project (*Flappy Bird Remastered*), embedded in the
+portfolio so a visitor can play it without leaving the site.
+
+- `index.html` + `game.js` (~860 lines, no libraries) + `assets/` (sprites and sounds)
+- Controls: **Space / click** to flap · **1 / 2 / 3** difficulty · **S** skin shop · **M** mute
+- Pixel art from `flappy-bird-assets` by samuelcust (MIT, see `assets/LICENSE`)
+
+---
+
 ## Comparison
 
 See [`COMPARISON.md`](COMPARISON.md) for the six-question table from the lecture.

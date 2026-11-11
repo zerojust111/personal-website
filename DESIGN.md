@@ -10,7 +10,7 @@ then let AI generate both versions from this sheet.
 | **Website title** | `Jiang Yucheng (ZeroJust) | Personal Website` — real name for the course, nickname for the internet |
 | **About Me** | First-year Artificial Intelligence major; started with Python terminal programs, now learning how the same ideas become an interactive web app; likes small projects I can finish, test and explain |
 | **Skills** | Python · C++ · AI Programming Design — only skills I can actually demonstrate, no invented percentages |
-| **Projects** | Personal Website (this page, built twice) · Virtual Dog Park (adopt, feed, grow, saved progress) |
+| **Projects** | Personal Website (this page, built twice) · Virtual Dog Park (adopt, feed, grow, saved progress) · Flappy Bird Remastered (my midterm game, playable in the native version) |
 | **Interests** | Programming · Minecraft · Basketball · Piano |
 | **Interactive feature** | Two buttons: dark/light theme toggle (remembers the choice) and "Show a fun fact" (random sentence) |
 

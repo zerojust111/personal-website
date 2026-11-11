@@ -47,7 +47,15 @@ SKILLS = {
 PROJECTS = {
     "Personal Website": ("HTML · CSS · JavaScript · Streamlit", "This page, built twice: native web and Streamlit."),
     "Virtual Dog Park": ("HTML · CSS · JavaScript", "Adopt, feed and grow a virtual dog."),
+    "Flappy Bird Remastered": (
+        "HTML5 Canvas · JavaScript",
+        "Midterm project: difficulties, coin economy, skins, star pickups and music. "
+        "860 lines, no libraries.",
+    ),
 }
+
+# 可以在浏览器里直接玩的项目（原生版本里的相对路径）
+PLAYABLE = {"Flappy Bird Remastered": "games/flappy-bird/index.html"}
 
 INTERESTS = ["💻 Programming", "🧱 Minecraft", "🏀 Basketball", "🎹 Piano"]
 
@@ -87,6 +95,10 @@ tech, description = PROJECTS[selected_project]
 st.subheader(selected_project)
 st.caption(f"Tech: {tech}")
 st.write(description)
+
+# 小游戏在原生版本里可以直接打开玩；Streamlit 只做展示
+if selected_project in PLAYABLE:
+    st.info(f"Playable in the native version: {PLAYABLE[selected_project]}")
 
 st.divider()
 
